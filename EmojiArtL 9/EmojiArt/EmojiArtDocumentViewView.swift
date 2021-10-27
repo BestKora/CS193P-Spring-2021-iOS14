@@ -9,7 +9,6 @@ import SwiftUI
 
 struct EmojiArtDocumentViewView: View {
     @ObservedObject var document: EmojiArtDocument
-    
     let defaultEmojiFontSize: CGFloat = 40
     
     var body: some View {

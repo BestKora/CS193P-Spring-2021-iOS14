@@ -105,10 +105,10 @@ struct CompactableIntoContextMenu: ViewModifier {
     #else
     let compact = false
     #endif
-    
+    @ViewBuilder
     func body(content: Content) -> some View {
         if compact {
-            Button {
+          Button {
                 
             } label: {
                 Image(systemName: "ellipsis.circle")
@@ -117,7 +117,7 @@ struct CompactableIntoContextMenu: ViewModifier {
                 content
             }
         } else {
-            content
+          content
         }
     }
 }
